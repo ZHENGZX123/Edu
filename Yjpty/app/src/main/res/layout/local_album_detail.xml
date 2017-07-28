@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/_ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/album_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40dp"
+        android:background="@color/_00cc99"
+        android:gravity="top" >
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/previous" />
+
+        <TextView
+            android:id="@+id/album_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:ellipsize="middle"
+            android:maxLength="12"
+            android:singleLine="true"
+            android:textColor="@color/_ffffff"
+            android:textSize="@dimen/_18sp" />
+
+        <TextView
+            android:id="@+id/album_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:enabled="true"
+            android:gravity="center"
+            android:minWidth="@dimen/_50dp"
+            android:text="@string/finish"
+            android:textColor="@color/_ffffff" />
+    </RelativeLayout>
+
+    <View style="@style/dividing_line_style" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:horizontalSpacing="7.5dip"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="7.5dip" >
+    </GridView>
+
+    <FrameLayout
+        android:id="@+id/pagerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <uk.co.senab.photoview.widget.AlbumViewPager
+            android:id="@+id/albumviewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/_666666" />
+
+        <RelativeLayout
+            android:id="@+id/album_item_header_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40dp"
+            android:background="@color/viewfinder_mask" >
+
+            <ImageView
+                android:id="@+id/header_bar_photo_back"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/app_name"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="5.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_back2" />
+
+            <TextView
+                android:id="@+id/header_bar_photo_count"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/header_bar_photo_back"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:paddingRight="@dimen/_10dp"
+                android:singleLine="true"
+                android:textColor="@color/_ffffff"
+                android:textSize="22.0sp" />
+
+            <TextView
+                android:id="@+id/header_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:padding="@dimen/_2dp"
+                android:background="@drawable/green_val"
+                android:enabled="true"
+                android:gravity="center"
+                android:minWidth="50dip"
+                android:text="@string/finish"
+                android:textColor="#ffffff" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_20dp"
+                android:layout_toLeftOf="@id/header_finish"
+                android:background="@drawable/picture_setting_album_checkbox"
+                android:button="@null"
+                android:checked="false"
+                android:focusable="false" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

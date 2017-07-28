@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/scan_a"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/scan" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="@dimen/_20dp"
+            android:paddingRight="@dimen/_10dp"
+            android:src="@drawable/ic_content_add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/session"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/xuexi" />
+    </RelativeLayout>
+
+    <handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/boy_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none" >
+    </handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <include
+        android:id="@+id/no_class"
+        layout="@layout/include_no_class"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/no_data"
+        layout="@layout/no_data"
+        android:visibility="gone" />
+
+</LinearLayout>

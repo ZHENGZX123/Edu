@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/_666666"
+        android:textSize="@dimen/_12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:orientation="horizontal" >
+
+        <uk.co.senab.photoview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/left_user_pic"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:background="@drawable/ic_action_supervisor_account"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_action_supervisor_account" />
+
+        <ImageView
+            android:layout_width="@dimen/_1dp"
+            android:layout_height="@dimen/_15dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/message_left" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/left_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/_666666"
+                android:textSize="@dimen/_12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/message_green_val"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_3dp"
+                android:paddingLeft="@dimen/_5dp"
+                android:paddingRight="@dimen/_5dp"
+                android:paddingTop="@dimen/_3dp" >
+
+                <TextView
+                    android:id="@+id/left_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxWidth="@dimen/_200dp"
+                    android:textColor="@color/_00cc99"
+                    android:textIsSelectable="true" />
+
+                <TextView
+                    android:id="@+id/reply_homework"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxWidth="@dimen/_200dp"
+                    android:textColor="@color/_00cc99"
+                    android:textSize="@dimen/_12sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/left_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/_e5e5e5"
+                    android:contentDescription="@string/app_name"
+                    android:maxHeight="@dimen/_200dp"
+                    android:maxWidth="@dimen/_200dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/sendIng"
+            style="?android:attr/progressBarStyleSmallTitle"
+            android:layout_width="@dimen/_15dp"
+            android:layout_height="@dimen/_15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_3dp" />
+
+        <ImageView
+            android:id="@+id/right_status"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_7dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/send_err"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/message_gral_val"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_3dp"
+            android:paddingLeft="@dimen/_5dp"
+            android:paddingRight="@dimen/_5dp"
+            android:paddingTop="@dimen/_3dp" >
+
+            <TextView
+                android:id="@+id/right_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxWidth="@dimen/_200dp"
+                android:textColor="@color/_333333"
+                android:textIsSelectable="true" />
+
+            <ImageView
+                android:id="@+id/right_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_200dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/_e5e5e5"
+                android:contentDescription="@string/app_name"
+                android:maxHeight="@dimen/_100dp"
+                android:maxWidth="@dimen/_200dp"
+                android:minHeight="@dimen/_70dp"
+                android:minWidth="@dimen/_50dp"
+                android:scaleType="center"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_7dp"
+            android:layout_height="@dimen/_7dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/message_right" />
+
+        <uk.co.senab.photoview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/right_user_pic"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_10dp"
+            android:background="@drawable/ic_action_supervisor_account"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_action_supervisor_account" />
+    </LinearLayout>
+
+</LinearLayout>

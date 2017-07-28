@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/_5dp"
+        android:textColor="@color/_333333" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:background="@drawable/white_val"
+        android:orientation="vertical"
+        android:padding="@dimen/_7dp" >
+
+        <TextView
+            android:id="@+id/video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/video_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7dp"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_14sp" />
+
+        <TextView
+            android:id="@+id/video_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7dp"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_12sp" />
+
+        <RelativeLayout
+            android:id="@+id/relatview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100dp"
+            android:layout_marginTop="@dimen/_7dp" >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@color/_e5e5e5" />
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/video_play" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

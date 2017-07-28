@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_e5e5e5"
+        android:padding="@dimen/_3dp" />
+
+    <LinearLayout
+        android:id="@+id/layouts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_7dp" >
+
+
+        <TextView
+            android:id="@+id/camare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector_bg"
+            android:drawablePadding="@dimen/_5dp"
+            android:drawableTop="@drawable/ic_image_camera_alt"
+            android:gravity="center"
+            android:text="@string/xiangji"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_10dp" />
+
+        <TextView
+            android:id="@+id/photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector_bg"
+            android:drawablePadding="@dimen/_5dp"
+            android:drawableTop="@drawable/ic_editor_insert_photo"
+            android:gravity="center"
+            android:text="@string/tuku"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_10dp" />
+    </LinearLayout>
+
+</LinearLayout>

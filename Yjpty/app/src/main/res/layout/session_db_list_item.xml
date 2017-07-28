@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_7dp"
+        android:paddingRight="@dimen/_7dp"
+        android:paddingTop="@dimen/_10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="@dimen/_70dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:background="@drawable/landi"
+                android:src="@color/_e5e5e5" />
+
+            <ImageView
+                android:id="@+id/zidingyi"
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_15dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/zidingyi" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_7dp"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_go" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:layout_marginTop="@dimen/_5dp"
+        android:background="@color/_e5e5e5" />
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/me" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_10dp"
+            android:src="@drawable/ic_action_settings" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/head_protrait"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80dp"
+        android:background="@color/_f7f7f7"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/head_portrait"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_16sp" />
+
+        <ImageView
+            android:id="@+id/head_img"
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_60dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/_e5e5e5"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_supervisor_account" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_cfcfcf" />
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/name"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:id="@+id/name_ovl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_cfcfcf" />
+
+    <LinearLayout
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/sex"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:id="@+id/sex_ovl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_cfcfcf" />
+
+    <LinearLayout
+        android:id="@+id/area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/area"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:id="@+id/area_ovl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_cfcfcf" />
+
+</LinearLayout>

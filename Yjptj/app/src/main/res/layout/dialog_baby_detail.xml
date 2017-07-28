@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_40dp" >
+
+    <View
+        android:layout_width="@dimen/_20dp"
+        android:layout_height="@dimen/_20dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/__10dp"
+        android:layout_marginRight="@dimen/_5dp"
+        android:background="@drawable/ic_navigation_arrow_drop_up" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/_5dp"
+        android:background="@drawable/_111111bg_val"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5dp"
+            android:textColor="@color/_f7f7f7"
+            android:textSize="@dimen/_14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1px"
+            android:layout_marginLeft="@dimen/_2dp"
+            android:layout_marginRight="@dimen/_2dp"
+            android:background="@color/_666666" />
+
+        <TextView
+            android:id="@+id/detele_baby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5dp"
+            android:textColor="@color/_f7f7f7"
+            android:textSize="@dimen/_14sp" />
+    </LinearLayout>
+
+</LinearLayout>

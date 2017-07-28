@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/post_edit_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40dp"
+            android:background="@color/_00cc99"
+            android:gravity="top" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="@string/growth_data"
+                android:textColor="@color/_f7f7f7"
+                android:textSize="@dimen/_18sp" />
+
+            <TextView
+                android:id="@+id/post_send"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingRight="12.0dip"
+                android:singleLine="true"
+                android:text="@string/send"
+                android:textColor="@color/_ffffff"
+                android:textSize="@dimen/_14sp" />
+
+            <ImageView
+                android:id="@+id/previos"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/app_name"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="@dimen/_10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/previous" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_1px"
+            android:background="@color/_e5e5e5" />
+
+        <EditText
+            android:id="@+id/post_content"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:background="#ffffff"
+            android:gravity="top"
+            android:hint="@string/save_something"
+            android:maxLength="140"
+            android:paddingBottom="@dimen/_5dp"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_10dp"
+            android:paddingTop="@dimen/_5dp"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:id="@+id/post_text_remain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="@dimen/_5dp"
+            android:paddingRight="@dimen/_10dp"
+            android:text="@string/zero"
+            android:textColor="@color/_cfcfcf"
+            android:textSize="@dimen/_12sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/post_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/_f7f7f7"
+            android:paddingBottom="@dimen/_10dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/post_pic_container"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_100dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="@dimen/_10dp" >
+
+                <uk.co.senab.photoview.widget.FilterImageView
+                    android:id="@+id/post_add_pic"
+                    android:layout_width="@dimen/_100dp"
+                    android:layout_height="@dimen/_100dp"
+                    android:src="@drawable/post_add_pic" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/post_pic_remain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="@dimen/_5dp"
+            android:paddingRight="@dimen/_10dp"
+            android:textColor="@color/_cfcfcf"
+            android:textSize="@dimen/_12sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_1px"
+            android:background="@color/_e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_7dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/snkj"
+                android:textSize="@dimen/_14sp" />
+
+            <TextView
+                android:id="@+id/gk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_image_navigate_next"
+                android:gravity="center_vertical"
+                android:text="@string/gk"
+                android:drawablePadding="@dimen/_10dp"
+                android:textSize="@dimen/_14sp" />
+        </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_7dp"
+            android:background="@color/_e5e5e5" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/pagerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <uk.co.senab.photoview.widget.AlbumViewPager
+            android:id="@+id/albumviewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/_f7f7f7" />
+
+        <include
+            android:id="@+id/album_item_header_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            layout="@layout/album_item_header_bar" />
+    </FrameLayout>
+
+</LinearLayout>

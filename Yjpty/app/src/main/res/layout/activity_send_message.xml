@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/send_message" />
+
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_10dp"
+            android:text="@string/cancle"
+            android:textColor="@color/_ffffff"
+            android:textSize="@dimen/_14sp" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+             android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5dp"
+            android:text="@string/peolpe"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_14sp" />
+
+        <EditText
+            android:id="@+id/notify_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fillet_grayline_whitebg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:inputType="text"
+            android:minHeight="@dimen/_100dp"
+            android:padding="@dimen/_10dp"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_16sp" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:src="@drawable/ic_image_control_point" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:orientation="horizontal" >
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/emoticon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_editor_insert_emoticon" />
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/_3dp"
+            android:layout_marginLeft="@dimen/_2dp"
+            android:layout_marginRight="@dimen/_2dp"
+            android:layout_marginTop="@dimen/_3dp"
+            android:layout_weight="1"
+            android:background="@drawable/fillet_grayline_whitebg"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/_3dp"
+            android:layout_marginLeft="@dimen/_2dp"
+            android:layout_marginRight="@dimen/_2dp"
+            android:layout_marginTop="@dimen/_3dp"
+            android:background="@drawable/fillet_grayline_whitebg"
+            android:paddingBottom="@dimen/_2dp"
+            android:paddingLeft="@dimen/_3dp"
+            android:paddingRight="@dimen/_3dp"
+            android:paddingTop="@dimen/_2dp"
+            android:text="@string/send_message_btn" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/faces_grid_view"
+        android:visibility="gone" />
+
+</LinearLayout>

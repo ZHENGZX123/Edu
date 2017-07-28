@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/area" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+           android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="@string/sure"
+            android:textColor="@color/_ffffff"
+            android:textSize="@dimen/_16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/_ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.byl.datepicker.wheelview.WheelView
+            android:id="@+id/id_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.byl.datepicker.wheelview.WheelView>
+
+        <com.byl.datepicker.wheelview.WheelView
+            android:id="@+id/id_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.byl.datepicker.wheelview.WheelView>
+
+        <com.byl.datepicker.wheelview.WheelView
+            android:id="@+id/id_district"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.byl.datepicker.wheelview.WheelView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="system_prop_key">
+        <item>ro.build.display.id</item>
+        <item>ro.product.model</item>
+        <item>ro.build.product</item>
+        <item>ro.build.version.sdk</item>
+        <item>ro.build.version.release</item>
+        <item>ro.build.date</item>
+        <item>ro.build.type</item>
+        <item>ro.product.cpu.abi</item>
+        <item>ro.board.platform</item>
+        <item>ro.product.manufacturer</item>
+        <item>persist.sys.timezone</item>
+        <item>ro.product.locale.language</item>
+        <item>ro.product.locale.region</item>
+        <item>dalvik.vm.heapstartsize</item>
+        <item>dalvik.vm.heapgrowthlimit</item>
+        <item>dalvik.vm.heapsize</item>
+        <item>dalvik.vm.heaptargetutilization</item>
+        <item>ro.config.ringtone</item>
+        <item>ro.config.notification_sound</item>
+        <item>ro.config.alarm_alert</item>
+    </string-array>
+
+
+    <string-array name="allKeys">
+        <item>BUILD_VERSION,ro.build.display.id</item>
+        <item>MODEL_NUMBER,ro.product.model</item>
+        <item>PRODUCT,ro.build.product</item>
+        <item>SDK_VERSION,ro.build.version.sdk</item>
+        <item>ANDROID_VERSION,ro.build.version.release</item>
+        <item>KERNEL_VERSION,ro.build.date</item>
+        <item>TYPE_VERSION,ro.build.type</item>
+        <item>CPU_ABI,ro.product.cpu.abi</item>
+        <item>BOARD_VERSION,ro.board.platform</item>
+        <item>MANUFACTURER,ro.product.manufacturer</item>
+        <item>DEF_TIME_ZONE,persist.sys.timezone</item>
+        <item>DEF_LANGUAGE,ro.product.locale.language</item>
+        <item>DEF_REGION,ro.product.locale.region</item>
+        <item>ANDROID_ID,android_id</item>
+        <item>APK_VERSION,apk_version</item>
+        <item>APK_NAME,apk_name</item>
+        <item>APK_PACKAGE,apk_package</item>
+        <item>WIFI_MAC,wifi_mac</item>
+        <item>BT_MAC,bt_mac</item>
+        <item>TIME_ZONE,time_zone</item>
+        <item>REGION,region</item>
+        <item>CPU_MAX_CUR,cpu_max_cur</item>
+        <item>RAM_TOTAL_CAPACITY,ram_total_capacity</item>
+        <item>ROM_TOTAL_CAPACITY,rom_total_capacity</item>
+        <item>NETWORK_STATUS,network_status</item>
+        <item>IP_ADDS,ip_adds</item>
+        <item>IMEI,imei</item>
+        <item>HEAP_START_SIZE,dalvik.vm.heapstartsize</item>
+        <item>HEAP_GROWTHLIMIT,dalvik.vm.heapgrowthlimit</item>
+        <item>HEAP_SIZE,dalvik.vm.heapsize</item>
+        <item>HEAP_TARGETUTILIZATION,dalvik.vm.heaptargetutilization</item>
+        <item>NFC,nfc</item>
+        <item>DEF_RINGTONE,ro.config.ringtone</item>
+        <item>DEF_NOTIFICATION,ro.config.notification_sound</item>
+        <item>DEF_ALARM_ALERT,ro.config.alarm_alert</item>
+        <item>RINGTONE,ringtione</item>
+        <item>NOTIFICATION,notification_sound</item>
+        <item>ALARM_ALERT,alarm_alert</item>
+        <item>EXTERNAL_STORAGE_DIR,ExternalStorageDirectory</item>
+        <item>SECONDRY_STORAGE_DIR,SecondaryStorageDirectory</item>
+        <item>AVAILABLE_EXTERNAL_STORAGE_DIR,AvailableExternalStorageDirectory</item>
+        <item>AVAILABLE_SECONDRY_STORAGE_DIR,AvailableSecondaryStorageDirectory</item>
+        <item>UPTIME_MILLIS,uptimeMillis</item>
+        <item>ELAPSED_REALTIME,elapsedRealTime</item>
+    </string-array>
+
+
+</resources>

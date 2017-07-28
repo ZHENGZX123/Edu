@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/teacher_detail" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+             android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5dp"
+        android:paddingLeft="@dimen/_7dp"
+        android:paddingTop="@dimen/_5dp" >
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/teacher_img"
+            android:layout_width="@dimen/_70dp"
+            android:layout_height="@dimen/_70dp"
+            android:background="@color/_e5e5e5"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_supervisor_account" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_5dp" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/_666666"
+                android:textSize="@dimen/_14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_e5e5e5" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@drawable/load_button_selector_bg"
+        android:padding="@dimen/_7dp"
+        android:text="@string/call"
+        android:textColor="@color/_ffffff" />
+
+</LinearLayout>

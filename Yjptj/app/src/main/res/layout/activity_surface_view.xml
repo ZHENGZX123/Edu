@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.kiway.activity.PlayVideoActivity" >
+
+    <RelativeLayout
+        android:id="@+id/pptview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <cn.kiway.activity.common.PPTViewer
+            android:id="@+id/pptviewer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/ppt_next"
+            style="@style/AppBaseTheme"
+            android:layout_width="@dimen/_35dp"
+            android:layout_height="@dimen/_35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_av_skip_next"
+            android:contentDescription="@string/app_name" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/ppt_last"
+            style="@style/AppBaseTheme"
+            android:layout_width="@dimen/_35dp"
+            android:layout_height="@dimen/_35dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_av_skip_next"
+            android:contentDescription="@string/app_name"
+            android:rotation="180" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/videoplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#88000000"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <uk.co.senab.photoview.widget.FilterImageView
+                    android:id="@+id/button_last"
+                    style="@style/AppBaseTheme"
+                    android:layout_width="@dimen/_35dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:background="@drawable/ic_av_fast_rewind"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <uk.co.senab.photoview.widget.FilterImageView
+                    android:id="@+id/button_play"
+                    style="@style/AppBaseTheme"
+                    android:layout_width="@dimen/_35dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:layout_marginLeft="@dimen/_7dp"
+                    android:layout_marginRight="@dimen/_7dp"
+                    android:background="@drawable/ic_av_pause"
+                    android:contentDescription="@string/app_name" />
+
+                <uk.co.senab.photoview.widget.FilterImageView
+                    android:id="@+id/button_replay"
+                    style="@style/AppBaseTheme"
+                    android:layout_width="@dimen/_35dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:layout_marginLeft="@dimen/_7dp"
+                    android:layout_marginRight="@dimen/_7dp"
+                    android:background="@drawable/ic_navigation_refresh"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="gone" />
+
+                <uk.co.senab.photoview.widget.FilterImageView
+                    android:id="@+id/button_next"
+                    style="@style/AppBaseTheme"
+                    android:layout_width="@dimen/_35dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:background="@drawable/ic_av_skip_next"
+                    android:contentDescription="@string/app_name" />
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:progressDrawable="@drawable/player_setting_bright_progressbar"
+                    android:thumb="@drawable/player_settings_bright_thumb" />
+
+                <TextView
+                    android:id="@+id/textView_showTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7dp"
+                    android:text="00:00:00/00:00:00"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_12sp" />
+
+                <TextView
+                    android:id="@+id/video_zl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5dp"
+                    android:text="@string/biaoqing"
+                    android:textColor="@color/_ffffff"
+                    android:textSize="@dimen/_12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:background="#70000000"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_40dp"
+            android:paddingRight="@dimen/_40dp"
+            android:textColor="@color/_ffffff"
+            android:textSize="@dimen/_14sp" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/show_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="@dimen/_20dp"
+            android:paddingRight="@dimen/_10dp"
+            android:src="@drawable/ic_image_flash_on" />
+    </RelativeLayout>
+
+</RelativeLayout>

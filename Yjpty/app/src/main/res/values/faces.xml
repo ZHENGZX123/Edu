@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="faces_key">
+        <item>[害羞]</item>
+        <item>[可爱]</item>
+        <item>[宾果]</item>
+        <item>[吐舌]</item>
+        <item>[吻]</item>
+        <item>[色]</item>
+        <item>[大笑]</item>
+        <item>[拜]</item>
+        <item>[酷]</item>
+        <item>[扇子]</item>
+        <item>[耶]</item>
+        <item>[喜极而涕]</item>
+        <item>[拍手]</item>
+        <item>[打哈欠]</item>
+        <item>[困]</item>
+        <item>[烤]</item>
+        <item>[困惑]</item>
+        <item>[晕]</item>
+        <item>[不开心]</item>
+        <item>[呜咽]</item>
+        <item>[委屈]</item>
+        <item>[哭]</item>
+        <item>[偷笑]</item>
+        <item>[愤怒]</item>
+        <item>[呐喊]</item>
+        <item>[打脸]</item>
+        <item>[忽视]</item>
+        <item>[汗]</item>
+        <item>[不说话]</item>
+        <item>[生病]</item>
+        <item>[疑惑]</item>
+        <item>[吃惊]</item>
+        <item>[惊讶]</item>
+        <item>[流泪]</item>
+        <item>[尴尬]</item>
+        <item>[爱心]</item>
+        <item>[心碎]</item>
+        <item>[月亮]</item>
+        <item>[太阳]</item>
+        <item>[彩虹]</item>
+        <item>[好的]</item>
+        <item>[胜利]</item>
+        <item>[钩]</item>
+        <item>[握手]</item>
+        <item>[点赞]</item>
+        <item>[挑衅]</item>
+        
+    </string-array>
+
+</resources>

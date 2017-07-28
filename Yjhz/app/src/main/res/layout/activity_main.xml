@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffff"
+                android:gravity="bottom"
+                tools:context="cn.kiway.yjhz.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/b1"/>
+
+    <ImageView
+        android:id="@+id/newVersion"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/new_version"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/jian_bian_se_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="ShowWeb"
+                    android:src="@drawable/kiwaybaobao_logo"/>
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_grayline_val"
+                    android:contentDescription="@string/app_name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/smsk"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/jian_bian_se_bg2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/scan"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/yjpty"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/smewmxz"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/tellphone"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/kwadv">
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#70000000"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+
+            android:src="@drawable/kiwayjiaoyu_logo"/>
+
+        <TextView
+            android:id="@+id/wifi_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_device_signal_wifi_white"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/sd_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_hardware_sim_card_has"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/hezi_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_hardware_desktop_mac"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/xignq_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/xignq_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/_ffffff"
+        android:textSize="20sp"/>
+</RelativeLayout>

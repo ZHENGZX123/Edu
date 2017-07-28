@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:background="@color/_00cc99" >
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_teacher"
+                android:button="@null"
+                android:checked="true"
+                android:paddingBottom="@dimen/_3dp"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="@dimen/_10dp"
+                android:paddingTop="@dimen/_3dp"
+                android:text="@string/session_plans"
+                android:textColor="@color/main_teacher_button_selector"
+                android:textSize="@dimen/_12sp" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/__2dp"
+                android:background="@drawable/button_selector_teacher"
+                android:button="@null"
+                android:paddingBottom="@dimen/_3dp"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="@dimen/_10dp"
+                android:paddingTop="@dimen/_3dp"
+                android:text="@string/session_db"
+                android:textColor="@color/main_teacher_button_selector"
+                android:textSize="@dimen/_12sp" />
+        </RadioGroup>
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos_class"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+
+        <TextView
+            android:id="@+id/see_plans"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_5dp"
+            android:paddingRight="@dimen/_5dp"
+            android:singleLine="true"
+            android:text="@string/see_plans"
+            android:textSize="@dimen/_12sp"
+            android:visibility="gone"
+            android:textColor="@color/_ffffff" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@+id/layouts"
+        android:layout_gravity="center">
+    </io.vov.vitamio.widget.VideoView>
+
+    <TextView
+        android:id="@+id/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/_ffffff"
+        android:textSize="20sp"
+        android:text="暗屏中"
+        android:textStyle="bold"
+        android:background="#000000"/>
+
+    <RelativeLayout
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/disc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/play_album"/>
+
+        <ImageView
+            android:id="@+id/needle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-70dp"
+            android:layout_toRightOf="@+id/disc"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitStart"
+            android:src="@drawable/play_needle"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/videocom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#40000000"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/replay"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.2"
+            android:focusable="false"
+            android:text="本小节播放完成"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/layouts"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:background="#1f1f1f"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/open"
+        android:layout_width="20dp"
+        android:layout_alignLeft="@+id/layout"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_gridview_item"
+        android:onClick="ShowLayout"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:src="@drawable/ic_keyboard_arrow_right"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="@dimen/_300dp"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/buttonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/zhuke"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_gridview_item"
+                android:padding="10dp"
+                android:text="主课"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColor="@color/_ffffff"
+                android:textSize="16sp"
+                android:onClick="ZhuKe"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/weike"
+                android:layout_width="0dp"
+                android:background="@drawable/selector_gridview_item"
+                android:text="微课"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:onClick="WeiKe"
+                android:textColor="@color/_ffffff"
+                android:layout_height="50dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#e5e5e5"
+
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="2px"
+                android:background="#00cc99"/>
+            <View
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="2px"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/selector_gridview_item"
+
+            android:divider="@null"></ListView>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

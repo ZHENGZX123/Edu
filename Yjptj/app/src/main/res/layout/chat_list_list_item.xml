@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_selector_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_7dp"
+    android:paddingRight="@dimen/_7dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_7dp" >
+
+        <TextView
+            android:id="@+id/chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/homework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/green_bg_val"
+                android:paddingBottom="@dimen/_2dp"
+                android:paddingLeft="@dimen/_3dp"
+                android:paddingRight="@dimen/_3dp"
+                android:paddingTop="@dimen/_2dp"
+                android:text="@string/homework"
+                android:textColor="@color/_ffffff"
+                android:textSize="@dimen/_10dp" />
+
+            <TextView
+                android:id="@+id/homework_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/__2dp"
+                android:background="@drawable/red_ring_bg"
+                android:gravity="center"
+                android:textColor="@color/_ffffff"
+                android:textSize="@dimen/_10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/green_bg_val"
+                android:paddingBottom="@dimen/_2dp"
+                android:paddingLeft="@dimen/_3dp"
+                android:paddingRight="@dimen/_3dp"
+                android:paddingTop="@dimen/_2dp"
+                android:text="@string/notify"
+                android:textColor="@color/_ffffff"
+                android:textSize="@dimen/_10dp" />
+
+            <TextView
+                android:id="@+id/notify_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/__2dp"
+                android:background="@drawable/red_ring_bg"
+                android:gravity="center"
+                android:textColor="@color/_ffffff"
+                android:textSize="@dimen/_10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chat_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/_7dp"
+            android:singleLine="true"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_14sp" />
+
+        <TextView
+            android:id="@+id/message_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/red_ring_bg"
+            android:gravity="center"
+            android:textColor="@color/_ffffff"
+            android:textSize="@dimen/_10dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_e5e5e5"
+        android:layout_marginTop="@dimen/_7dp"
+        android:paddingBottom="@dimen/_5dp"
+        android:paddingLeft="@dimen/_10dp"
+        android:paddingRight="@dimen/_10dp"
+        android:paddingTop="@dimen/_5dp" />
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/calss_rings" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+             android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/upload_pic" />
+    </RelativeLayout>
+
+    <handmark.pulltorefresh.library.PullToRefreshExpandableListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/_f7f7f7"
+        android:childDivider="@null"
+        android:divider="@color/_333333"
+        android:fastScrollEnabled="false"
+        android:groupIndicator="@null"
+        android:paddingBottom="@dimen/_20dp"
+        android:scrollbars="none"
+        ptr:ptrDrawable="@drawable/default_ptr_rotate" >
+    </handmark.pulltorefresh.library.PullToRefreshExpandableListView>
+
+    <include 
+        android:id="@+id/no_data"
+        layout="@layout/no_data"/>
+
+    <LinearLayout
+        android:id="@+id/layouts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/emoticon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_editor_insert_emoticon" />
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/_3dp"
+            android:layout_marginLeft="@dimen/_2dp"
+            android:layout_marginRight="@dimen/_2dp"
+            android:layout_marginTop="@dimen/_3dp"
+            android:layout_weight="1"
+            android:background="@drawable/fillet_grayline_whitebg"
+            android:inputType="text"
+            android:padding="@dimen/_7dp"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_14sp" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/_3dp"
+            android:layout_marginLeft="@dimen/_2dp"
+            android:layout_marginRight="@dimen/_2dp"
+            android:layout_marginTop="@dimen/_3dp"
+            android:background="@drawable/button_selector_bg"
+            android:paddingBottom="@dimen/_2dp"
+            android:paddingLeft="@dimen/_3dp"
+            android:paddingRight="@dimen/_3dp"
+            android:paddingTop="@dimen/_2dp"
+            android:text="@string/send_message_btn" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/faces_grid_view"
+        android:visibility="gone" />
+
+</LinearLayout>

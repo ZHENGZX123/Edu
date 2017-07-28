@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/class_info" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+             android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_10dp"
+            android:src="@drawable/ic_hardware_keyboard_control" />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/_e5e5e5"
+        android:groupIndicator="@null"
+        android:scrollbars="none" >
+    </ExpandableListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_e5e5e5"
+        android:paddingBottom="@dimen/_5dp"
+        android:paddingTop="@dimen/_5dp" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_2dp"
+        android:paddingLeft="@dimen/_3dp"
+        android:paddingRight="@dimen/_3dp"
+        android:paddingTop="@dimen/_2dp" >
+
+        <EditText
+            android:id="@+id/add_baby"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_val"
+            android:hint="@string/please_write_baby_name"
+            android:padding="@dimen/_5dp"
+            android:textSize="@dimen/_14sp" />
+
+        <Button
+            android:id="@+id/new_baby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chengse_val"
+            android:paddingBottom="@dimen/_3dp"
+            android:paddingLeft="@dimen/_5dp"
+            android:paddingRight="@dimen/_5dp"
+            android:paddingTop="@dimen/_3dp"
+            android:text="@string/new_baby"
+            android:textColor="@color/_ffffff"
+            android:textSize="@dimen/_14sp" />
+    </LinearLayout>
+
+</LinearLayout>

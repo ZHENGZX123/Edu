@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/new_class" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+             android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:gravity="center"
+        android:text="@string/Tip_principal"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/_20sp" />
+
+    <TextView
+        android:id="@+id/create_class_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:text="@string/Please_select_create_a_class_teacher"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/_16sp" />
+
+    <TextView
+        android:id="@+id/create_class_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:text="@string/Please_select_other_teachers_to_join_class"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/_16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:text="@string/Please_each_class_teacher_with_the_kindergarten_management"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/_16sp" />
+
+    <Button
+        android:id="@+id/create_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/chengse_val"
+        android:padding="@dimen/_10dp"
+        android:text="@string/create_class"
+        android:textColor="@color/_ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:text="@string/Please_click_here_to_create_but_it_did_make_the_teacher"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/_16sp" />
+
+    <Button
+        android:id="@+id/joins_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/chengse_val"
+        android:padding="@dimen/_10dp"
+        android:text="@string/jions_class"
+        android:textColor="@color/_ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10dp"
+        android:text="@string/Please_click_here_to_join_the_class_other_teachers"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/_16sp" />
+
+</LinearLayout>

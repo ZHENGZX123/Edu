@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/fasongwifi" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_7dp"
+        android:text="@string/wifiname"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/_14sp" />
+
+    <EditText
+        android:id="@+id/wifiName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginLeft="@dimen/_7dp"
+        android:layout_marginRight="@dimen/_7dp"
+        android:background="@drawable/white_line_val"
+        android:hint="@string/qsrwmm"
+        android:inputType="text"
+        android:padding="@dimen/_10dp"
+        android:singleLine="true"
+        android:textSize="@dimen/_14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_7dp"
+        android:text="@string/wifips"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/_14sp" />
+
+    <EditText
+        android:id="@+id/wifiPs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginLeft="@dimen/_7dp"
+        android:layout_marginRight="@dimen/_7dp"
+        android:background="@drawable/white_line_val"
+        android:hint="@string/qsrwmm"
+        android:inputType="text"
+        android:padding="@dimen/_10dp"
+        android:singleLine="true"
+        android:textSize="@dimen/_14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_7dp"
+        android:text="@string/wifity"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/_14sp" />
+
+    <Spinner
+        android:id="@+id/wifiTp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_val"
+        android:dropDownVerticalOffset="@dimen/_1dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:popupBackground="@drawable/white_val"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/load_button_selector_bg"
+        android:padding="@dimen/_10dp"
+        android:text="@string/send_wifi"
+        android:textColor="@color/_ffffff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@color/_e5e5e5" />
+
+    <Button
+        android:id="@+id/no_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/load_button_selector_bg"
+        android:padding="@dimen/_10dp"
+        android:text="@string/no_send_wifi"
+        android:textColor="@color/_ffffff" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10dp"
+        android:button="@null"
+        android:textColor="@color/_00cc99"
+        android:textSize="@dimen/_12sp"
+        android:drawablePadding="@dimen/_7dp"
+        android:drawableRight="@drawable/radiobutton_selector_bg"
+        android:text="@string/bztx" />
+
+</LinearLayout>

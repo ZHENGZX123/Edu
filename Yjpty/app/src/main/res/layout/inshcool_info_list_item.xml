@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="@dimen/_80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_7dp"
+            android:text="@string/name"
+             android:singleLine="true"
+            android:textColor="@color/_00cc99"
+            android:textSize="@dimen/_14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/_1px"
+            android:layout_height="match_parent"
+            android:background="@color/_00cc99" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableStart="@drawable/radiobutton_selector_bg"
+                android:paddingLeft="@dimen/_30dp" />
+
+            <View
+                android:layout_width="@dimen/_1px"
+                android:layout_height="match_parent"
+                android:background="@color/_00cc99" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableStart="@drawable/radiobutton_selector_bg"
+                android:paddingLeft="@dimen/_30dp" />
+
+            <View
+                android:layout_width="@dimen/_1px"
+                android:layout_height="match_parent"
+                android:background="@color/_00cc99" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableStart="@drawable/radiobutton_selector_bg"
+                android:paddingLeft="@dimen/_30dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_00cc99" />
+
+</LinearLayout>

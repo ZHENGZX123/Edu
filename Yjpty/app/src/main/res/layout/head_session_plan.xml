@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_7dp"
+        android:background="@drawable/green_line_val"
+        android:orientation="vertical"
+        android:padding="@dimen/_5dp" >
+
+        <TextView
+            android:id="@+id/gold_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_val"
+            android:drawableLeft="@drawable/session_flower"
+            android:drawablePadding="@dimen/_5dp"
+            android:padding="@dimen/_3dp"
+            android:text="@string/teacher_gold"
+            android:textColor="@color/_f41100"
+            android:textSize="@dimen/_12sp" />
+
+        <TextView
+            android:id="@+id/gold_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7dp"
+            android:lineSpacingExtra="@dimen/_2dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/really"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_7dp"
+        android:background="@drawable/green_line_val"
+        android:orientation="vertical"
+        android:padding="@dimen/_5dp" >
+
+        <TextView
+            android:id="@+id/really_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_val"
+            android:drawableLeft="@drawable/session_flower"
+            android:drawablePadding="@dimen/_5dp"
+            android:padding="@dimen/_3dp"
+            android:text="@string/teacher_really"
+            android:textColor="@color/_f41100"
+            android:textSize="@dimen/_12sp" />
+
+        <TextView
+            android:id="@+id/really_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7dp"
+            android:lineSpacingExtra="@dimen/_2dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_12sp" />
+    </LinearLayout>
+
+</LinearLayout>

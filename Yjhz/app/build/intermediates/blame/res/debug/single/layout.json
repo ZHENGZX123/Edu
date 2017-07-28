@@ -1,0 +1,234 @@
+[
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gird_view.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\gird_view.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mediacontroller.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\mediacontroller.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sessiondetail.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\activity_sessiondetail.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gsession_detail_list_item.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\gsession_detail_list_item.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_view.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\list_view.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_audio.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\activity_audio.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_video_list.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\activity_video_list.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gsession_list_item.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\gsession_list_item.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_session_first.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\activity_session_first.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_list_item.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\spinner_list_item.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\girdview_p_item.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\girdview_p_item.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\vlist.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\vlist.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_img.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\activity_img.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ppt.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\activity_ppt.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\class_list_item.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\class_list_item.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login_dialog.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\login_dialog.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\onsession_list_item.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\onsession_list_item.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_webview.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\dialog_webview.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_video.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\activity_video.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_wifi_edit.xml",
+        "source": "F:\\kiway_xm\\Yjhz\\app\\src\\main\\res\\layout\\dialog_wifi_edit.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\layout\\abc_screen_simple.xml"
+    }
+]

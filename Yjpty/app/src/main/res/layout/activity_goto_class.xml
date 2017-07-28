@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/go_class" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+             android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+
+        <TextView
+            android:id="@+id/tellphone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="@dimen/_7dp"
+            android:text="@string/tellphone"
+            android:textColor="@color/_ffffff"
+            android:textSize="@dimen/_14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_40dp"
+            android:drawableTop="@drawable/phone_box"
+            android:gravity="center_horizontal"
+            android:text="@string/near_box_go_to_class"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_14sp" />
+
+        <Button
+            android:id="@+id/go_to_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_40dp"
+            android:layout_marginRight="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@drawable/load_button_selector_bg"
+            android:padding="@dimen/_10dp"
+            android:text="@string/go_class"
+            android:textColor="@color/_ffffff"
+            android:textSize="@dimen/_14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_30dp"
+            android:background="@drawable/greenline_greenbg_val"
+            android:orientation="vertical"
+            android:padding="@dimen/_10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/audio"
+                android:drawablePadding="@dimen/_5dp"
+                android:gravity="center"
+                android:text="@string/xiao_tie_shi"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/_12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:text="@string/session_class"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/_12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/teaching_plans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/zhi_kan_jiao_an_bei_ke"
+            android:textColor="@color/_00cc99"
+            android:textSize="@dimen/_16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/wwbdbh"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30dp"
+            android:layout_marginRight="@dimen/_30dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:drawableLeft="@drawable/tv_box"
+            android:gravity="center_vertical|left"
+            android:text="@string/box_advice"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30dp"
+            android:layout_marginRight="@dimen/_30dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:drawableLeft="@drawable/tv_scan"
+            android:gravity="center_vertical|left"
+            android:text="@string/box_advice_two"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_14sp" />
+
+        <Button
+            android:id="@+id/sao_yi_sao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_40dp"
+            android:layout_marginRight="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_40dp"
+            android:background="@drawable/load_button_selector_bg"
+            android:padding="@dimen/_10dp"
+            android:text="@string/sao_yi_sao"
+            android:textColor="@color/_ffffff"
+            android:textSize="@dimen/_14sp" />
+    </LinearLayout>
+
+</LinearLayout>

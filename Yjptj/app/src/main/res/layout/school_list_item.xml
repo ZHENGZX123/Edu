@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_selector_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/_7dp" >
+
+    <TextView
+        android:id="@+id/school_news"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/_5dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/_14sp" />
+
+    <ImageView
+        android:id="@+id/school_img"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hugh" />
+
+</LinearLayout>

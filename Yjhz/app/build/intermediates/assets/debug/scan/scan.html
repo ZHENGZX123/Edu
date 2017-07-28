@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>扫描登录</title>
+	<script src="jquery-2.1.1.js"></script> 
+	<script type="text/javascript" src="jquery.qrcode.min.js"></script>
+	
+	<style type="text/css">
+		.divdis{
+			margin: 0 auto; display: table;margin-bottom: 10px;font-size:38px;
+		}
+		.jianju{
+		 padding-top: 10px;
+		 padding-bottom: 36px;
+		}
+		.img_css{
+		    width:160px;
+		    height:160px;
+		    border-radius:75px;
+			margin-top: 50px;
+		}
+	
+	</style>
+</head>
+<body>
+	<!--内容-->
+	<section id="main">
+		<div style="margin: 15% auto; width:700px; height:100%; overflow:hidden; border-radius:5px;">
+			<div class="form" style="padding:20px; ">
+				<!-- <h4 class="text-primary">扫码登录</h4> -->
+	
+				<div  class="divdis" id="qrCode">
+					<img id="qrCode" style="display:none;" alt="" src="">
+				</div>  
+				<div id = userName class="divdis">
+					
+				</div>
+				<div  id="binding" class="divdis">
+					<!-- 打开手机端扫一扫 -->
+				</div>
+			
+			</div>
+		</div>
+	</section>
+	
+	<script type="text/javascript">
+	var wsproject = '192.168.8.6:8180/yjpts';
+	var project = 'http://' + wsproject;
+	var token = "";
+	var state = 0;
+	var connection = true;
+	var websocket;
+	
+	function setText(text){
+       $("#info").append(text+"\n")
+    }
+	
+	function initWebSocket(){
+	      //判断当前浏览器是否支持WebSocket
+	      if('WebSocket' in window){
+	         websocket = new WebSocket("ws://" + wsproject + "/qrcws/" + token + "/" + state);
+	         state+=1;
+	      	//连接发生错误的回调方法
+	     	websocket.onerror = function(){
+	     		qrCode();
+		    	 setText("连接出错");
+		    	// initWebSocket();
+	      	 };
+	      	//连接成功建立的回调方法
+	      	websocket.onopen = function(event){
+	    		setText("打开连接");
+	      	}
+	      	//接收到消息的回调方法
+	      	websocket.onmessage = function(){
+	      		var obj = eval('(' + event.data + ')');
+	      		setText(obj.retcode);
+	      		console.log(obj.retcode)
+	    	  	if(obj.retcode=="binding"){
+	    	  		var photo = obj.photo;
+	    	  		$("#qrCode img").addClass("img_css");
+	    	  		$("#qrCode").find("canvas").remove();
+	    	  		$("#qrCode img").attr("src",photo).css("display","block");
+					$("#userName").addClass("jianju");
+					$("#userName").text(obj.name);
+	    		    $("#binding").text("扫码成功\n请在手机端确认登录");
+	    		     //调用原生方法
+			    	 if(window.box){
+			    	  	window.box.UserInfo(obj.name+"&"+obj.photo);
+			    	  }
+	    	  	} else if(obj.retcode=="confirm"){
+	    		  $.ajax({
+					   url: project + "/scan/dologin?tokenId=" + token,
+					   data: null,
+					   async: false,
+					   success: function(data){
+						   if($("#qrCode").find("canvas")){
+							    $("#qrCode").find("canvas").remove();
+							}
+			    	  		if($("#qrCode").find("img")){
+							    $("#qrCode img").css("display","none");
+							}
+							 //调用原生方法
+			    	  		if(window.box){
+			    	  			window.box.Login(obj.data);
+			    	  		}
+					   }
+					});
+	    	  	} else if(obj.retcode=="close"){	  
+	    	  		if($("#qrCode").find("canvas")){
+					    $("#qrCode").find("canvas").remove();
+					}
+	    	  		if($("#qrCode").find("img")){
+					    $("#qrCode img").css("display","none");
+					}
+	    	  		websocket.onopen = function(event){
+	    	    		setText("打开连接");
+	    	      	}
+	    	  		qrCode();
+	    	  		$("#qrCode").removeClass("img_css");
+	    	  		$("#userName").removeClass("jianju");
+					$("#userName").text("");
+					$("#binding").text("打开手机端扫一扫");
+					 if(window.box){
+			    	  	window.box.Cancle();
+			    	  }
+	    	  	}/* else if(obj.retcode=="boxLogin"){
+	    	  		if($("#qrCode").find("canvas")){
+					    $("#qrCode").find("canvas").remove();
+					}
+	    	  		if($("#qrCode").find("img")){
+					    $("#qrCode img").css("display","none");
+					}
+	    	  		
+	    	  		//调用原生方法
+	    	  		if(window.box){
+	    	  			window.box.Login(obj.args);
+	    	  		}
+	    	  	} */
+	      	}
+	      	//连接关闭的回调方法
+	      	websocket.onclose = function(){
+	    	  	setText("连接关闭");
+	    	  	if(connection){
+	    	  		initWebSocket();
+	    	  	}
+	    	}
+	     	//监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+	      	window.onbeforeunload = function(){
+	      	  state = 0;
+	          websocket.close();
+	      	}
+	      }
+	      else{
+	          alert('Not support websocket')
+	      }
+		}
+	
+		function qrCode(){
+			$.ajax({
+				   url: project + "/scan/qrcode",
+				   data: null,
+				   async: false,
+				   success: function(data){
+					   data = eval("("+data+")");
+					   token = data.token;
+					   state = 0;
+					   
+					   if($("#qrCode").find("canvas")){
+						   $("#qrCode").find("canvas").remove();
+					   }
+					   	 //调用原生方法
+			    	  if(window.box){
+			    	  		window.box.BoxCode(token);
+			    	  }
+					   $('#qrCode').qrcode({width: 672,height: 609,text: token})
+					   initWebSocket();
+				   }
+				});
+			
+		}
+		
+		qrCode();
+	
+	</script>
+</body>
+</html>

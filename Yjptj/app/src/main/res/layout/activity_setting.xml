@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/setting" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_10dp"
+            android:src="@drawable/previous" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_e5e5e5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/wifi_on"
+                    android:textColor="@color/_333333"
+                    android:textSize="@dimen/_14sp" />
+
+                <eu.janmuller.android.simplecropimage.SwitchButton
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/mTogBtn"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_gravity="center_vertical"
+                    app:animationVelocity="8"
+                    app:offDrawable="@drawable/img_back_off"
+                    app:onColor="#43d95d"
+                    app:thumbDrawable="@drawable/selector_thumb"
+                    app:thumb_marginBottom="2dp"
+                    app:thumb_marginLeft="3dp"
+                    app:thumb_marginRight="3dp"
+                    app:thumb_marginTop="3dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:background="@color/_e5e5e5" />
+
+            <LinearLayout
+                android:id="@+id/clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_10dp"
+                android:paddingLeft="@dimen/_5dp"
+                android:paddingRight="@dimen/_5dp"
+                android:paddingTop="@dimen/_10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/clear_data"
+                    android:textColor="@color/_333333"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:id="@+id/clear_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/_666666"
+                    android:textSize="@dimen/_12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:background="@color/_e5e5e5" />
+
+            <LinearLayout
+                android:id="@+id/check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_10dp"
+                android:paddingLeft="@dimen/_5dp"
+                android:paddingRight="@dimen/_5dp"
+                android:paddingTop="@dimen/_10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/check"
+                    android:textColor="@color/_333333"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/_666666"
+                    android:textSize="@dimen/_12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:background="@color/_e5e5e5" />
+
+            <TextView
+                android:id="@+id/chang_ps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_bg"
+                android:drawableRight="@drawable/ic_image_navigate_next"
+                android:padding="@dimen/_5dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="@string/change_password"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:background="@color/_e5e5e5" />
+
+            <TextView
+                android:id="@+id/serice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_bg"
+                android:drawableRight="@drawable/ic_image_navigate_next"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp"
+                android:singleLine="true"
+                android:text="@string/serice"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:background="@color/_e5e5e5" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_bg"
+                android:drawableRight="@drawable/ic_image_navigate_next"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp"
+                android:singleLine="true"
+                android:text="@string/about"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:background="@color/_e5e5e5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@color/_e5e5e5" />
+
+            <!--
+                 <TextView
+                android:id="@+id/set_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_bg"
+                android:drawableRight="@drawable/icon_go"
+                android:padding="@dimen/_10dp"
+                android:singleLine="true"
+                android:text="@string/set_number"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:background="@color/_e5e5e5" />
+
+            <TextView
+                android:id="@+id/changer_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_bg"
+                android:drawableRight="@drawable/icon_go"
+                android:padding="@dimen/_10dp"
+                android:singleLine="true"
+                android:text="@string/change_number"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:background="@color/_e5e5e5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@color/_e5e5e5" />
+            -->
+
+            <TextView
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_bg"
+                android:gravity="center"
+                android:padding="@dimen/_10dp"
+                android:singleLine="true"
+                android:text="@string/exit_bt"
+                android:textColor="@color/_f41100"
+                android:textSize="@dimen/_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:background="@color/_e5e5e5" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

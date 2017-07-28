@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_ffffff" >
+
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:background="@drawable/button_white_togray_selecter_white"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/_5dp" >
+    </ImageView>
+
+</LinearLayout>

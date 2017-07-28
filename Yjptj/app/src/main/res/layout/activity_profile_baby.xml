@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/profile_baby" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+    </RelativeLayout>
+
+    <uk.co.senab.photoview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile"
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20dp"
+        android:src="@drawable/ic_action_supervisor_account"
+        app:civ_border_color="@color/_e5e5e5"
+        app:civ_border_width="0dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_7dp"
+        android:textColor="@color/_666666"
+        android:textSize="@dimen/_14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@color/_e5e5e5" />
+
+    <LinearLayout
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_7dp"
+            android:text="@string/baby_sex"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_14sp" />
+
+        <TextView
+            android:id="@+id/sex_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_image_navigate_next"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_7dp"
+            android:text="@string/must"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_e5e5e5" />
+
+    <LinearLayout
+        android:id="@+id/brithday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_7dp"
+            android:text="@string/baby_briathday"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_14sp" />
+
+        <TextView
+            android:id="@+id/brithday_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_image_navigate_next"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_7dp"
+            android:text="@string/must"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_e5e5e5" />
+
+    <LinearLayout
+        android:id="@+id/who"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_7dp"
+            android:text="@string/I_is_baby"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_14sp" />
+
+        <TextView
+            android:id="@+id/who_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_image_navigate_next"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_7dp"
+            android:text="@string/must"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5dp"
+        android:background="@color/_e5e5e5" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/chengsebutton_selector_bg"
+        android:padding="@dimen/_7dp"
+        android:text="@string/finish_follow"
+        android:textColor="@color/_ffffff"
+        android:textSize="@dimen/_14sp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7dp"
+        android:gravity="center"
+        android:text="@string/please_fisinh_baby_info"
+        android:textColor="@color/_666666"
+        android:textSize="@dimen/_14sp" />
+
+</LinearLayout>

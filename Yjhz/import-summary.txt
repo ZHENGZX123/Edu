@@ -1,0 +1,111 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* META-INF\
+* META-INF\.svn\
+* META-INF\.svn\all-wcprops
+* META-INF\.svn\entries
+* META-INF\.svn\format
+* META-INF\.svn\text-base\
+* META-INF\.svn\text-base\MANIFEST.MF.svn-base
+* ic_launcher-web.png
+* keytone-password
+* kiway.key
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:23.4.0
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\arm64-v8a\libffmpegk.so => app\src\main\jniLibs\arm64-v8a\libffmpegk.so
+* libs\arm64-v8a\libOMX.24.so => app\src\main\jniLibs\arm64-v8a\libOMX.24.so
+* libs\arm64-v8a\libstlport_shared.so => app\src\main\jniLibs\arm64-v8a\libstlport_shared.so
+* libs\arm64-v8a\libvao.0.so => app\src\main\jniLibs\arm64-v8a\libvao.0.so
+* libs\arm64-v8a\libvplayer.so => app\src\main\jniLibs\arm64-v8a\libvplayer.so
+* libs\arm64-v8a\libvscanner.so => app\src\main\jniLibs\arm64-v8a\libvscanner.so
+* libs\arm64-v8a\libvvo.0.so => app\src\main\jniLibs\arm64-v8a\libvvo.0.so
+* libs\arm64-v8a\libvvo.9.so => app\src\main\jniLibs\arm64-v8a\libvvo.9.so
+* libs\armeabi-v7a\libffmpegk.so => app\src\main\jniLibs\armeabi-v7a\libffmpegk.so
+* libs\armeabi-v7a\libOMX.11.so => app\src\main\jniLibs\armeabi-v7a\libOMX.11.so
+* libs\armeabi-v7a\libOMX.14.so => app\src\main\jniLibs\armeabi-v7a\libOMX.14.so
+* libs\armeabi-v7a\libOMX.18.so => app\src\main\jniLibs\armeabi-v7a\libOMX.18.so
+* libs\armeabi-v7a\libOMX.9.so => app\src\main\jniLibs\armeabi-v7a\libOMX.9.so
+* libs\armeabi-v7a\libstlport_shared.so => app\src\main\jniLibs\armeabi-v7a\libstlport_shared.so
+* libs\armeabi-v7a\libvao.0.so => app\src\main\jniLibs\armeabi-v7a\libvao.0.so
+* libs\armeabi-v7a\libvplayer.so => app\src\main\jniLibs\armeabi-v7a\libvplayer.so
+* libs\armeabi-v7a\libvscanner.so => app\src\main\jniLibs\armeabi-v7a\libvscanner.so
+* libs\armeabi-v7a\libvvo.0.so => app\src\main\jniLibs\armeabi-v7a\libvvo.0.so
+* libs\armeabi-v7a\libvvo.7.so => app\src\main\jniLibs\armeabi-v7a\libvvo.7.so
+* libs\armeabi-v7a\libvvo.8.so => app\src\main\jniLibs\armeabi-v7a\libvvo.8.so
+* libs\armeabi-v7a\libvvo.9.so => app\src\main\jniLibs\armeabi-v7a\libvvo.9.so
+* libs\armeabi-v7a\libvvo.j.so => app\src\main\jniLibs\armeabi-v7a\libvvo.j.so
+* libs\core-3.0.0.jar => app\libs\core-3.0.0.jar
+* libs\initactivity.jar => app\libs\initactivity.jar
+* libs\itsrts-pptviewer.jar => app\libs\itsrts-pptviewer.jar
+* libs\netty-all-5.0.0.Alpha2.jar => app\libs\netty-all-5.0.0.Alpha2.jar
+* libs\okhttp-3.4.1.jar => app\libs\okhttp-3.4.1.jar
+* libs\okio-1.9.0.jar => app\libs\okio-1.9.0.jar
+* libs\universal-image-loader-1.9.3.jar => app\libs\universal-image-loader-1.9.3.jar
+* libs\x86\libffmpegk.so => app\src\main\jniLibs\x86\libffmpegk.so
+* libs\x86\libOMX.14.so => app\src\main\jniLibs\x86\libOMX.14.so
+* libs\x86\libOMX.18.so => app\src\main\jniLibs\x86\libOMX.18.so
+* libs\x86\libOMX.9.so => app\src\main\jniLibs\x86\libOMX.9.so
+* libs\x86\libstlport_shared.so => app\src\main\jniLibs\x86\libstlport_shared.so
+* libs\x86\libvao.0.so => app\src\main\jniLibs\x86\libvao.0.so
+* libs\x86\libvplayer.so => app\src\main\jniLibs\x86\libvplayer.so
+* libs\x86\libvscanner.so => app\src\main\jniLibs\x86\libvscanner.so
+* libs\x86\libvvo.0.so => app\src\main\jniLibs\x86\libvvo.0.so
+* libs\x86\libvvo.9.so => app\src\main\jniLibs\x86\libvvo.9.so
+* libs\x86\libvvo.j.so => app\src\main\jniLibs\x86\libvvo.j.so
+* lint.xml => app\lint.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

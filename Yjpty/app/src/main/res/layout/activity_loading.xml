@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/login" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_10dp"
+            android:src="@drawable/previous"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/resiger"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="@dimen/_7dp"
+            android:text="@string/regeri"
+            android:textColor="@color/_ffffff"
+            android:textSize="@dimen/_14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_30dp"
+        android:background="@drawable/green_line_val"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="match_parent"
+            android:background="@color/_2000cc99"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_communication_stay_current_portrait" />
+
+        <View
+            android:layout_width="@dimen/_1px"
+            android:layout_height="match_parent"
+            android:background="@color/_00cc99" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:background="@null"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:maxLength="11"
+            android:padding="@dimen/_10dp"
+            android:singleLine="true"
+            android:textSize="@dimen/_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/green_line_val"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="match_parent"
+            android:background="@color/_2000cc99"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_action_lock" />
+
+        <View
+            android:layout_width="@dimen/_1px"
+            android:layout_height="match_parent"
+            android:background="@color/_00cc99" />
+
+        <EditText
+            android:id="@+id/user_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:background="@null"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:padding="@dimen/_10dp"
+            android:singleLine="true"
+            android:textSize="@dimen/_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/green_line_val"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="match_parent"
+                android:background="@color/_2000cc99"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_content_mail" />
+
+            <View
+                android:layout_width="@dimen/_1px"
+                android:layout_height="match_parent"
+                android:background="@color/_00cc99" />
+
+            <EditText
+                android:id="@+id/user_core"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:background="@null"
+                android:hint="@string/core"
+                android:inputType="text"
+                android:maxLength="4"
+                android:padding="@dimen/_10dp"
+                android:singleLine="true"
+                android:textSize="@dimen/_14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_3dp"
+            android:background="@drawable/green_val"
+            android:paddingLeft="@dimen/_3dp"
+            android:paddingRight="@dimen/_3dp"
+            android:text="@string/yanzhengma"
+            android:textColor="@color/_ffffff" />
+
+        <ImageView
+            android:id="@+id/scan"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:padding="3dp"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10dp"
+        android:padding="@dimen/_3dp"
+        android:textColor="@color/_f41100"
+        android:textSize="@dimen/_12sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/load_button_selector_bg"
+        android:padding="@dimen/_10dp"
+        android:text="@string/login"
+        android:textColor="@color/_ffffff" />
+
+    <TextView
+        android:id="@+id/fooget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10dp"
+        android:padding="@dimen/_3dp"
+        android:text="@string/forget_password"
+        android:textColor="@color/_00cc99"
+        android:textSize="@dimen/_12sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

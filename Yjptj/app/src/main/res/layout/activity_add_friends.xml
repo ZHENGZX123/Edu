@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/about" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+           android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+
+        <TextView
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="@dimen/_7dp"
+            android:text="@string/finish"
+            android:textColor="@color/_ffffff"
+            android:textSize="@dimen/_12sp" />
+    </RelativeLayout>
+
+    <com.sortlistview.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_7dp"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/white_val"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawablePadding="@dimen/_5dp"
+        android:hint="@string/qsrgjz"
+        android:padding="@dimen/_5dp"
+        android:singleLine="true"
+        android:textSize="@dimen/_14sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/title_layout_no_friends"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:background="#E0E0E0"
+            android:gravity="center_vertical"
+            android:text="@string/myppdlxr"
+            android:textColor="@color/_333333"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:background="@color/_f7f7f7"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_layout_catalog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20dp"
+                android:background="#E0E0E0"
+                android:paddingBottom="@dimen/_2dp"
+                android:paddingLeft="@dimen/_5dp"
+                android:paddingTop="@dimen/_2dp"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/_10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/_111111bg_val"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.sortlistview.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</LinearLayout>

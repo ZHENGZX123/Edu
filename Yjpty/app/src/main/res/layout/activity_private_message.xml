@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/news" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+             android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+    </RelativeLayout>
+
+    <handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none" >
+    </handmark.pulltorefresh.library.PullToRefreshListView>
+
+   
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_e5e5e5"
+        android:padding="@dimen/_3dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:orientation="horizontal" >
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/emoticon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_editor_insert_emoticon" />
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/_3dp"
+            android:layout_marginLeft="@dimen/_2dp"
+            android:layout_marginRight="@dimen/_2dp"
+            android:layout_marginTop="@dimen/_3dp"
+            android:layout_weight="1"
+            android:maxLength="200"
+            android:background="@drawable/fillet_grayline_whitebg"
+            android:imeActionLabel="@string/send_message_btn"
+            android:imeOptions="actionSend"
+            android:inputType="text" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/add_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_image_control_point" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/_3dp"
+            android:layout_marginLeft="@dimen/_2dp"
+            android:layout_marginRight="@dimen/_2dp"
+            android:layout_marginTop="@dimen/_3dp"
+            android:background="@drawable/button_selector_bg"
+            android:singleLine="true"
+            android:text="@string/send_message_btn"
+            android:textColor="@color/_666666"
+            android:visibility="gone" />
+    </LinearLayout>
+    <include
+        layout="@layout/faces_grid_view"
+        android:visibility="gone" />
+    <include
+        android:id="@+id/layouts"
+        layout="@layout/layouts_message_more"
+        android:visibility="gone" />
+
+</LinearLayout>

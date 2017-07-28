@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "cn.kiway.Yjptj"
+        minSdkVersion 13
+        targetSdkVersion 21
+        aaptOptions {
+            cruncherEnabled = false
+            useNewCruncher = false
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:22.2.1'
+    compile files('libs/core.jar')
+    compile files('libs/itsrts-pptviewer.jar')
+    compile files('libs/java_websocket.jar')
+    compile files('libs/mina-core-2.0.13.jar')
+    compile files('libs/slf4j-api-1.7.14.jar')
+}

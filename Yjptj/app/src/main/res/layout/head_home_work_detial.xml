@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_7dp"
+    android:paddingRight="@dimen/_7dp"
+    android:paddingTop="@dimen/_10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/class_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1班"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昨天09：20"
+            android:textColor="@color/_666666"
+            android:textSize="@dimen/_14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5dp"
+        android:text="罚抄作业"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/_12sp" />
+
+    <TextView
+        android:id="@+id/teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:text="来自张老师"
+        android:textColor="@color/_666666"
+        android:textSize="@dimen/_10sp" />
+
+    <TextView
+        android:id="@+id/flower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5dp"
+        android:drawableLeft="@drawable/flower"
+        android:text="作业完成，获得小红花"
+        android:textColor="@color/_666666"
+        android:textSize="@dimen/_10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1px"
+            android:layout_weight="1"
+            android:background="@color/_e5e5e5" />
+
+        <TextView
+            android:id="@+id/homework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="目前已交作业2次"
+            android:textColor="@color/_333333"
+            android:textSize="@dimen/_14sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1px"
+            android:layout_weight="1"
+            android:background="@color/_e5e5e5" />
+    </LinearLayout>
+
+</LinearLayout>

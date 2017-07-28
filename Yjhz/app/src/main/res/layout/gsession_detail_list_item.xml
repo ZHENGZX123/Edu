@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="beforeDescendants"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:padding="7dp">
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/isplay"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/_isplaybg_val"
+            android:paddingBottom="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="已上课"
+            android:textColor="@color/_ffffff"
+            android:textSize="10sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/white_grayline_val"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/_ffffff"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:padding="10dp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/_ffffff"
+        android:textSize="10sp"/>
+    </LinearLayout>
+</LinearLayout>

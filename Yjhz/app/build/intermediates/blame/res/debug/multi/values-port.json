@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "F:\\kiway_xm\\Yjhz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrator\\.android\\build-cache\\9aa453beadc0b15ee5cd480f25b1be59921cde18\\output\\res\\values-port\\values-port.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 55,
+                        "endOffset": 280
+                    }
+                }
+            }
+        ]
+    }
+]

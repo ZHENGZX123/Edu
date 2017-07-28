@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" >
+    </android.support.v4.view.ViewPager>
+
+    <Button
+        android:id="@+id/join_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_80dp"
+        android:background="@drawable/green_val"
+        android:paddingBottom="@dimen/_5dp"
+        android:paddingLeft="@dimen/_10dp"
+        android:paddingRight="@dimen/_10dp"
+        android:paddingTop="@dimen/_5dp"
+        android:text="进入"
+        android:textColor="@color/_ffffff"
+        android:textSize="@dimen/_20sp"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_30dp"
+        android:checkedButton="@+id/rb1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_20dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:button="@drawable/guide_button_selecter"
+            android:enabled="false" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:button="@drawable/guide_button_selecter"
+            android:enabled="false" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:button="@drawable/guide_button_selecter"
+            android:enabled="false" />
+    </RadioGroup>
+
+</RelativeLayout>

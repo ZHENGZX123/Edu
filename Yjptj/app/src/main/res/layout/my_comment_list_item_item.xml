@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/_10dp"
+    android:paddingRight="@dimen/_10dp" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50dp"
+            android:background="@drawable/button_white_togray_selecter"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10dp" >
+
+            <uk.co.senab.photoview.SelectableRoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/user_img"
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_action_supervisor_account"
+                android:visibility="gone"
+                app:sriv_left_bottom_corner_radius="@dimen/_3dp"
+                app:sriv_left_top_corner_radius="@dimen/_3dp"
+                app:sriv_right_bottom_corner_radius="@dimen/_3dp"
+                app:sriv_right_top_corner_radius="@dimen/_3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_5dp" >
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="张飞"
+                        android:textColor="@color/_00cc99"
+                        android:textSize="@dimen/_12sp" />
+
+                    <TextView
+                        android:id="@+id/reply_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="3小时前"
+                        android:textColor="@color/_333333"
+                        android:textSize="@dimen/_10sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reply_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="@dimen/_5dp"
+                    android:text="值得后人景仰！老爷子一路走好!"
+                    android:textColor="@color/_333333"
+                    android:textSize="@dimen/_12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1px"
+            android:layout_marginLeft="@dimen/_60dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:background="@color/_e5e5e5" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/white_line"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/_ffffff"
+        android:textSize="14sp">
+    </TextView>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerInside"
+        android:padding="5dp"
+        android:src="@drawable/delete"/>
+</LinearLayout>
+

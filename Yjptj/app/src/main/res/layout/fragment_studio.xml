@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/xuexi" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_3dp"
+        android:background="@color/_ffffff"
+        android:checkedButton="@+id/rb1"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_1dp"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttun_green_seletor"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/kecheng"
+            android:textColor="@color/main_menu_button_selector"
+            android:textSize="@dimen/_12sp" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttun_green_seletor"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/zulichengchang"
+            android:textColor="@color/main_menu_button_selector"
+            android:textSize="@dimen/_12sp" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_1dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttun_green_seletor"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/tuijian"
+            android:textColor="@color/main_menu_button_selector"
+            android:textSize="@dimen/_12sp" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1px"
+        android:background="@color/_00cc99" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/baby_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+    <include
+        android:id="@+id/no_class"
+        layout="@layout/include_no_class"
+        android:visibility="gone" />
+
+</LinearLayout>

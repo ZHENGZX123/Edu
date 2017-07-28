@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/teacher_gold" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos_class"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <cn.kiway.activity.main.teaching.IListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none" >
+        </cn.kiway.activity.main.teaching.IListView>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/_00cc99"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:background="@color/_30b896" />
+
+            <TextView
+                android:id="@+id/open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/_00cc99"
+                android:drawableRight="@drawable/ic_hardware_keyboard_arrow_up"
+                android:gravity="right"
+                android:padding="@dimen/_7dp"
+                android:text="@string/close"
+                android:textColor="@color/_ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1px"
+                android:background="@color/_30b896" />
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_10dp" >
+
+                    <TextView
+                        android:id="@+id/darkscreen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/touch"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/_10dp"
+                        android:paddingTop="@dimen/_10dp"
+                        android:text="@string/darkscreen"
+                        android:textColor="@color/_ffffff"
+                        android:textSize="@dimen/_12sp" />
+
+                    <TextView
+                        android:id="@+id/brightenscreen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/touch"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/_10dp"
+                        android:paddingTop="@dimen/_10dp"
+                        android:text="@string/brightenscreen"
+                        android:textColor="@color/_ffffff"
+                        android:textSize="@dimen/_12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_10dp" >
+
+                    <uk.co.senab.photoview.widget.FilterImageView
+                        android:id="@+id/last"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/_7dp"
+                        android:src="@drawable/ic_av_skip_previous" />
+
+                    <uk.co.senab.photoview.widget.FilterImageView
+                        android:id="@+id/play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_40dp"
+                        android:layout_marginRight="@dimen/_40dp"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/_7dp"
+                        android:src="@drawable/ic_navigation_refresh" />
+
+                    <uk.co.senab.photoview.widget.FilterImageView
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/_7dp"
+                        android:src="@drawable/ic_av_skip_next" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/notice_pause"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_10dp" >
+
+                    <TextView
+                        android:id="@+id/pause"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/touch"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/_10dp"
+                        android:paddingTop="@dimen/_10dp"
+                        android:text="@string/pause"
+                        android:textColor="@color/_ffffff"
+                        android:textSize="@dimen/_12sp" />
+
+                    <TextView
+                        android:id="@+id/resume"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20dp"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/touch"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/_10dp"
+                        android:paddingTop="@dimen/_10dp"
+                        android:text="@string/resume"
+                        android:textColor="@color/_ffffff"
+                        android:textSize="@dimen/_12sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginRight="@dimen/_20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_10dp" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal" >
+
+                            <uk.co.senab.photoview.widget.FilterImageView
+                                android:id="@+id/video_last"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@string/app_name"
+                                android:padding="@dimen/_5dp"
+                                android:src="@drawable/video_last" />
+                            <!--
+                            <uk.co.senab.photoview.widget.FilterImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@string/app_name"
+                                android:padding="@dimen/_5dp"
+                                android:src="@drawable/video" />
+                            -->
+
+                            <uk.co.senab.photoview.widget.FilterImageView
+                                android:id="@+id/video_add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@string/app_name"
+                                android:padding="@dimen/_5dp"
+                                android:src="@drawable/video_add" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/video"
+                            android:textColor="@color/_ffffff"
+                            android:textSize="@dimen/_12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/play_sr"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/play" 
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

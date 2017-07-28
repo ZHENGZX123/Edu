@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/surface_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    </io.vov.vitamio.widget.VideoView>
+
+    <View
+        android:id="@+id/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"/>
+
+    <RelativeLayout
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/disc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/play_album"/>
+
+        <ImageView
+            android:id="@+id/needle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-70dp"
+            android:layout_toRightOf="@+id/disc"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitStart"
+            android:src="@drawable/play_needle"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/videocom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#40000000"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/replay"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/ic_av_skip_previous"
+            android:gravity="center"
+            android:text="@string/previous"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/ic_av_replay"
+            android:gravity="center"
+            android:text="@string/replay"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/replay"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/ic_av_skip_next"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/replay"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="本小节播放完成\n在手机端控制"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

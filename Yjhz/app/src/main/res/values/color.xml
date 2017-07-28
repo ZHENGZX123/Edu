@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="_f41100">#f41100</color>
+    <color name="_ffffff">#ffffff</color>
+    <color name="_ff9800">#ff9800</color>
+   <color name="transparent">#00000000</color>
+    <color name="mediacontroller_bg_pressed">#ff53c1bd</color>
+    <color name="mediacontroller_bg">#99000000</color>
+    <color name="bg_dialog">#30000000</color>
+
+
+</resources>

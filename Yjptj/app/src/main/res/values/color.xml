@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="_ffffff">#ffffff</color>
+    <color name="_cfcfcf">#cfcfcf</color>
+    <color name="_333333">#333333</color>
+    <color name="_12b7f5">#12b7f5</color>
+    <color name="_00cc99">#00cc99</color>
+    <color name="province_line_border">#333333</color>
+    <color name="press_color">#ddaaaaaa</color>
+    <color name="vifrification">#00000000</color>
+    <color name="_e5e5e5">#e5e5e5</color>
+    <color name="_ff9966">#ff9966</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="_f7f7f7">#f7f7f7</color>
+    <color name="_666666">#666666</color>
+    <color name="_f41100">#f41100</color>
+    <color name="_cdf2e7">#cdf2e7</color>
+    <color name="_f0eff5">#f0eff5</color>
+    <color name="_fd5300">#fd5300</color>
+    <color name="_4ca2bb">#4ca2bb</color>
+    <color name="_2000cc99">#2000cc99</color>
+    <color name="_111111">#111111</color>
+    <color name="_e87404">#e87404</color>
+    <color name="_0d9774">#0d9774</color>
+    <color name="_cc0000">#cc0000</color>
+    <color name="_f3f3f3">#f3f3f3</color>
+
+</resources>

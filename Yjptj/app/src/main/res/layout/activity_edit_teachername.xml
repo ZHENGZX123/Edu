@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_f7f7f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/jionsclass" />
+
+        <uk.co.senab.photoview.widget.FilterImageView
+            android:id="@+id/previos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="@dimen/_20dp"
+            android:src="@drawable/previous" />
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10dp"
+            android:gravity="center_vertical"
+            android:text="@string/sure"
+            android:textColor="@color/_ffffff"
+            android:textSize="@dimen/_16sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/notify_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/fillet_grayline_whitebg"
+        android:gravity="center_vertical"
+        android:hint="@string/wtcphone"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="@dimen/_10dp"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/_16sp" />
+
+</LinearLayout>
